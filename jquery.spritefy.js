@@ -5,7 +5,7 @@
 	 * 
 	*/
 	
-	$.fn.frame = function(animation_name,options)
+	$.fn.spritefy = function(animation_name,options)
 	{
 		var options = options || {};
 		var el = this;
