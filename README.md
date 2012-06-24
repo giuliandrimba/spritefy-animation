@@ -53,17 +53,21 @@ After you initialize the spritefy in the element, you will have access to the fo
 
 You can set callbacks for the following animation events:
 
-1. **animation.onStart** - Triggered when the animation starts
+1. **onStart** - Triggered when the animation starts
 
 		$("#my_el").animation.onStart = function() { console.log("on start")}
 
-2. **animation.onIteration** - Triggered for each time the animation changes the keyframe
+2. **onIteration** - Triggered for each time the animation plays in the loop
 
 		$("#my_el").animation.onIteration = function() { console.log("on iteration")}
 
-3. **animation.onEnd** - Triggered when the animation ends
+3. **onComplete** - Triggered when the animation ends
 
 		$("#my_el").animation.onEnd = function() { console.log("on end")}
+
+[See the Example]
+
+[See the Example]: http://www.giuliandrimba.com/labs/spritefy-animation/ "See the example"
 
 
 ## Spritefy-Build
