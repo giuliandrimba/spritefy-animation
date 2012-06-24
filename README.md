@@ -23,7 +23,7 @@ No toy for you IE (Internet Explorer doesn't support css animations)
 
 # Usage
 
-	$(<el>).spritefy(<animation_name>,options);
+	$(<el>).spritefy(<animation_name>,<options>);
 
 # Example
 
