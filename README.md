@@ -23,11 +23,11 @@ No toy for you IE (Internet Explorer doesn't support css animations)
 
 # Usage
 
-	$(<el>).spritefy(<animation_name>,options)
+	$(<el>).spritefy(<animation_name>,<options>);
 
 # Example
 
-	$("#my_el").spritefy("sprite",{duration:1})
+	$("#my_el").spritefy("sprite",{duration:1,count:5,onComplete:function(){console.log("completed")}});
 
 # Options
 
@@ -51,19 +51,19 @@ After you initialize the spritefy in the element, you will have access to the fo
 
 # Animation events
 
-You can set callbacks for the following animation events:
+You can set callbacks for the following animation events in the options:
 
 1. **onStart** - Triggered when the animation starts
 
-		$("#my_el").animation.onStart = function() { console.log("on start")}
+		$("#my_el").spritefy("sprite",{onStart:startHandle})
 
 2. **onIteration** - Triggered for each time the animation plays in the loop
 
-		$("#my_el").animation.onIteration = function() { console.log("on iteration")}
+		$("#my_el").spritefy("sprite",{onIteration:iterationHandle})
 
 3. **onComplete** - Triggered when the animation ends
 
-		$("#my_el").animation.onEnd = function() { console.log("on end")}
+		$("#my_el").spritefy("sprite",{onComplete:completeHandle})
 
 [See the Example]
 
