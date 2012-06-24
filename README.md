@@ -66,6 +66,7 @@ You can set callbacks for the following animation events in the options:
 		$("#my_el").spritefy("sprite",{onComplete:completeHandle})
 
 [See the Example]
+---------------------
 
 [See the Example]: http://www.giuliandrimba.com/labs/spritefy-animation/ "See the example"
 
